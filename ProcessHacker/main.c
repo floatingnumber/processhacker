@@ -222,14 +222,21 @@ INT WINAPI wWinMain(
 #ifndef DEBUG
     if (PhIsExecutingInWow64())
     {
-        PhShowWarning(
-            NULL,
+        //on 64-bit windows we may encounter errros while injecting a module to 32-bit process
+        // with 64-bit version of processhacker, however it will be OK with a 32-bit version.
+        // so we don't quit application directly, but let the user choose to quit or not.
+
+        INT ret = PhShowMessage(
+            NULL, MB_OKCANCEL,
             L"%s",
             L"You are attempting to run the 32-bit version of Process Hacker on 64-bit Windows. "
             L"Most features will not work correctly.\n\n"
-            L"Please run the 64-bit version of Process Hacker instead."
+            L"Click Cancel: Quit and run the 64-bit version of Process Hacker instead\n"
+            L"Click OK:     Go on"
             );
-        PhExitApplication(STATUS_IMAGE_SUBSYSTEM_NOT_PRESENT);
+
+        if (ret == IDCANCEL)
+            PhExitApplication(STATUS_IMAGE_SUBSYSTEM_NOT_PRESENT);
     }
 #endif
 
