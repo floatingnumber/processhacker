@@ -19,6 +19,15 @@
     <Filter Include="Module">
       <UniqueIdentifier>{67c40321-0b28-4c16-8c48-dc0b64c148d7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Process Hacker\main">
+      <UniqueIdentifier>{7afc80af-3c07-4e46-a2fe-ec6fa1e551bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process Hacker\processview">
+      <UniqueIdentifier>{4523eb4f-99a5-4a14-9fa2-a28778fd2a14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process Hacker\processview\properties-modules">
+      <UniqueIdentifier>{3baba949-0411-4655-87ba-7b323f68a3be}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="about.c">
@@ -79,12 +88,6 @@
       <Filter>Process Hacker</Filter>
     </ClCompile>
     <ClCompile Include="logwnd.c">
-      <Filter>Process Hacker</Filter>
-    </ClCompile>
-    <ClCompile Include="main.c">
-      <Filter>Process Hacker</Filter>
-    </ClCompile>
-    <ClCompile Include="mainwnd.c">
       <Filter>Process Hacker</Filter>
     </ClCompile>
     <ClCompile Include="mdump.c">
@@ -261,9 +264,6 @@
     <ClCompile Include="prpgtok.c">
       <Filter>Process Hacker</Filter>
     </ClCompile>
-    <ClCompile Include="prpgmod.c">
-      <Filter>Process Hacker</Filter>
-    </ClCompile>
     <ClCompile Include="prpgmem.c">
       <Filter>Process Hacker</Filter>
     </ClCompile>
@@ -277,9 +277,6 @@
       <Filter>Process Hacker</Filter>
     </ClCompile>
     <ClCompile Include="prpgsrv.c">
-      <Filter>Process Hacker</Filter>
-    </ClCompile>
-    <ClCompile Include="mwpgproc.c">
       <Filter>Process Hacker</Filter>
     </ClCompile>
     <ClCompile Include="mwpgsrv.c">
@@ -311,6 +308,18 @@
     </ClCompile>
     <ClCompile Include="prpgvdm.c">
       <Filter>Process Hacker</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwnd.c">
+      <Filter>Process Hacker\main</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Process Hacker\main</Filter>
+    </ClCompile>
+    <ClCompile Include="mwpgproc.c">
+      <Filter>Process Hacker\processview</Filter>
+    </ClCompile>
+    <ClCompile Include="prpgmod.c">
+      <Filter>Process Hacker\processview\properties-modules</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
