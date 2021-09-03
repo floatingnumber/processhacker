@@ -40,7 +40,7 @@
     <PlatformToolset>v142</PlatformToolset>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
     <LocalDebuggerWorkingDirectory>$(SolutionDir)bin\$(Configuration)$(PlatformArchitecture)\</LocalDebuggerWorkingDirectory>
-    <SpectreMitigation>Spectre</SpectreMitigation>
+    <SpectreMitigation>false</SpectreMitigation>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -57,7 +57,7 @@
     <PlatformToolset>v142</PlatformToolset>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
     <LocalDebuggerWorkingDirectory>$(SolutionDir)bin\$(Configuration)$(PlatformArchitecture)\</LocalDebuggerWorkingDirectory>
-    <SpectreMitigation>Spectre</SpectreMitigation>
+    <SpectreMitigation>false</SpectreMitigation>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -137,7 +137,7 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <ControlFlowGuard>Guard</ControlFlowGuard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/utf-8 /FS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>aclui.lib;comctl32.lib;dnsapi.lib;iphlpapi.lib;noarg.obj;noenv.obj;ntdll.lib;phlib.lib;userenv.lib;uxtheme.lib;wbemuuid.lib;windowscodecs.lib;winhttp.lib;winsta.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -174,7 +174,7 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <ControlFlowGuard>Guard</ControlFlowGuard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/utf-8 /FS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>aclui.lib;comctl32.lib;dnsapi.lib;iphlpapi.lib;noarg.obj;noenv.obj;ntdll.lib;phlib.lib;userenv.lib;uxtheme.lib;wbemuuid.lib;windowscodecs.lib;winhttp.lib;winsta.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -253,7 +253,7 @@
       <IntelJCCErratum>true</IntelJCCErratum>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/utf-8 /FS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>aclui.lib;comctl32.lib;dnsapi.lib;iphlpapi.lib;noarg.obj;noenv.obj;ntdll.lib;phlib.lib;userenv.lib;uxtheme.lib;wbemuuid.lib;windowscodecs.lib;winhttp.lib;winsta.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -299,7 +299,7 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <GuardEHContMetadata>true</GuardEHContMetadata>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/utf-8 /FS %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>aclui.lib;comctl32.lib;dnsapi.lib;iphlpapi.lib;noarg.obj;noenv.obj;ntdll.lib;phlib.lib;userenv.lib;uxtheme.lib;wbemuuid.lib;windowscodecs.lib;winhttp.lib;winsta.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
