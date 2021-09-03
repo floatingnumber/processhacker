@@ -104,7 +104,7 @@ VOID PhInitializeModuleList(
 
     PhAddTreeNewColumn(Context->TreeNewHandle, PHMOTLC_COMPANYNAME, FALSE, L"Company name", 180, PH_ALIGN_LEFT, ULONG_MAX, 0);
     PhAddTreeNewColumn(Context->TreeNewHandle, PHMOTLC_VERSION, FALSE, L"Version", 100, PH_ALIGN_LEFT, ULONG_MAX, 0);
-    PhAddTreeNewColumn(Context->TreeNewHandle, PHMOTLC_FILENAME, FALSE, L"File name", 180, PH_ALIGN_LEFT, ULONG_MAX, DT_PATH_ELLIPSIS);
+    PhAddTreeNewColumn(Context->TreeNewHandle, PHMOTLC_FILENAME, FALSE, L"File path", 180, PH_ALIGN_LEFT, ULONG_MAX, DT_PATH_ELLIPSIS);
 
     PhAddTreeNewColumn(Context->TreeNewHandle, PHMOTLC_TYPE, FALSE, L"Type", 80, PH_ALIGN_LEFT, ULONG_MAX, 0);
     PhAddTreeNewColumnEx(Context->TreeNewHandle, PHMOTLC_LOADCOUNT, FALSE, L"Load count", 40, PH_ALIGN_RIGHT, ULONG_MAX, DT_RIGHT, TRUE);

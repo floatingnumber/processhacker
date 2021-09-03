@@ -139,7 +139,7 @@ VOID PhInitializeServiceTreeList(
     PhAddTreeNewColumnEx(hwnd, PHSVTLC_KEYMODIFIEDTIME, FALSE, L"Key modified time", 140, PH_ALIGN_LEFT, ULONG_MAX, 0, TRUE);
     PhAddTreeNewColumn(hwnd, PHSVTLC_VERIFICATIONSTATUS, FALSE, L"Verification status", 70, PH_ALIGN_LEFT, ULONG_MAX, 0);
     PhAddTreeNewColumn(hwnd, PHSVTLC_VERIFIEDSIGNER, FALSE, L"Verified signer", 100, PH_ALIGN_LEFT, ULONG_MAX, 0);
-    PhAddTreeNewColumn(hwnd, PHSVTLC_FILENAME, FALSE, L"File name", 100, PH_ALIGN_LEFT, ULONG_MAX, DT_PATH_ELLIPSIS);
+    PhAddTreeNewColumn(hwnd, PHSVTLC_FILENAME, FALSE, L"File path", 100, PH_ALIGN_LEFT, ULONG_MAX, DT_PATH_ELLIPSIS);
 
     TreeNew_SetRedraw(hwnd, TRUE);
 

@@ -144,7 +144,7 @@ VOID PhInitializeProcessTreeList(
     // Customizable columns (1)
     PhAddTreeNewColumn(hwnd, PHPRTLC_COMPANYNAME, FALSE, L"Company name", 180, PH_ALIGN_LEFT, ULONG_MAX, 0);
     PhAddTreeNewColumn(hwnd, PHPRTLC_VERSION, FALSE, L"Version", 100, PH_ALIGN_LEFT, ULONG_MAX, 0);
-    PhAddTreeNewColumn(hwnd, PHPRTLC_FILENAME, FALSE, L"File name", 180, PH_ALIGN_LEFT, ULONG_MAX, DT_PATH_ELLIPSIS);
+    PhAddTreeNewColumn(hwnd, PHPRTLC_FILENAME, FALSE, L"File path", 180, PH_ALIGN_LEFT, ULONG_MAX, DT_PATH_ELLIPSIS);
     PhAddTreeNewColumn(hwnd, PHPRTLC_COMMANDLINE, FALSE, L"Command line", 180, PH_ALIGN_LEFT, ULONG_MAX, 0);
     PhAddTreeNewColumnEx(hwnd, PHPRTLC_PEAKPRIVATEBYTES, FALSE, L"Peak private bytes", 70, PH_ALIGN_RIGHT, ULONG_MAX, DT_RIGHT, TRUE);
     PhAddTreeNewColumnEx(hwnd, PHPRTLC_WORKINGSET, FALSE, L"Working set", 70, PH_ALIGN_RIGHT, ULONG_MAX, DT_RIGHT, TRUE);

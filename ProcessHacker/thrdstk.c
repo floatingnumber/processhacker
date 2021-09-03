@@ -782,7 +782,7 @@ VOID InitializeThreadStackTree(
     PhAddTreeNewColumn(Context->TreeNewHandle, PH_STACK_TREE_COLUMN_PARAMETER4, FALSE, L"Stack parameter #4", 100, PH_ALIGN_LEFT, ULONG_MAX, 0);
     PhAddTreeNewColumn(Context->TreeNewHandle, PH_STACK_TREE_COLUMN_CONTROLADDRESS, FALSE, L"Control address", 100, PH_ALIGN_LEFT, ULONG_MAX, 0);
     PhAddTreeNewColumn(Context->TreeNewHandle, PH_STACK_TREE_COLUMN_RETURNADDRESS, FALSE, L"Return address", 100, PH_ALIGN_LEFT, ULONG_MAX, 0);
-    PhAddTreeNewColumn(Context->TreeNewHandle, PH_STACK_TREE_COLUMN_FILENAME, FALSE, L"File name", 100, PH_ALIGN_LEFT, ULONG_MAX, 0);
+    PhAddTreeNewColumn(Context->TreeNewHandle, PH_STACK_TREE_COLUMN_FILENAME, FALSE, L"File path", 100, PH_ALIGN_LEFT, ULONG_MAX, 0);
     PhAddTreeNewColumn(Context->TreeNewHandle, PH_STACK_TREE_COLUMN_LINETEXT, FALSE, L"Line number", 100, PH_ALIGN_LEFT, ULONG_MAX, 0);
 
     TreeNew_SetTriState(Context->TreeNewHandle, FALSE);
