@@ -947,7 +947,7 @@ INT_PTR CALLBACK PhpProcessModulesDlgProc(
                     {
                         if (selectedItem->Id == PH_MODULE_FLAGS_LOAD_MODULE_OPTION)
                         {
-                            if (PhGetIntegerSetting(L"EnableWarnings") && !PhShowConfirmMessage(
+                            /*if (PhGetIntegerSetting(L"EnableWarnings") && !PhShowConfirmMessage(
                                 hwndDlg,
                                 L"load",
                                 L"a module",
@@ -956,11 +956,12 @@ INT_PTR CALLBACK PhpProcessModulesDlgProc(
                                 ))
                             {
                                 break;
-                            }
+                            }*/
 
                             PhReferenceObject(processItem);
                             PhUiLoadDllProcess(hwndDlg, processItem);
                             PhDereferenceObject(processItem);
+
                         }
                         else if (selectedItem->Id == PH_MODULE_FLAGS_MODULE_STRINGS_OPTION)
                         {

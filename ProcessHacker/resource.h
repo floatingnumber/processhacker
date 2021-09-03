@@ -565,6 +565,7 @@
 #define ID_IOPRIORITY_NORMAL            40030
 #define ID_IOPRIORITY_HIGH              40031
 #define ID_PROCESS_RESTART              40032
+#define ID_PROCESS_INJECT_DLL           40033
 #define ID_PROCESS_VIRTUALIZATION       40034
 #define ID_PROCESS_AFFINITY             40035
 #define ID_PROCESS_CREATEDUMPFILE       40036

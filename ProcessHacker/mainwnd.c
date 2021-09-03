@@ -48,6 +48,8 @@
 #include <srvprv.h>
 
 #include <mainwndp.h>
+#include <tchar.h>
+#include "phutil.h"
 
 PHAPPAPI HWND PhMainWndHandle = NULL;
 BOOLEAN PhMainWndExiting = FALSE;
@@ -1187,6 +1189,25 @@ VOID PhMwpOnCommand(
             }
         }
         break;
+
+    case ID_PROCESS_INJECT_DLL:
+    {
+        PPH_PROCESS_ITEM processItem = PhGetSelectedProcessItem();
+
+        PhReferenceObject(processItem);
+        PhUiLoadDllProcess(WindowHandle, processItem);
+        PhDereferenceObject(processItem);
+
+        //PhShowMessage (WindowHandle, MB_OK | MB_ICONINFORMATION,       \
+        //    _T("to unload dll from process:\n")     \
+        //    _T("1. open Properties dialog;\n")      \
+        //    _T("2. view Modules tab; \n")           \
+        //    _T("3. select the module you want to unload;\n")        \
+        //    _T("4. right click the module and choose Unload\n"));   
+
+        break;
+    }
+
     case ID_PROCESS_CREATEDUMPFILE:
         {
             PPH_PROCESS_ITEM processItem = PhGetSelectedProcessItem();

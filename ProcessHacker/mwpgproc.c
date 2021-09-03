@@ -745,6 +745,7 @@ PPH_EMENU PhpCreateProcessMenu(
     PhInsertEMenuItem(menu, PhCreateEMenuItem(0, ID_PROCESS_CREATEDUMPFILE, L"Create dump fi&le...", NULL, NULL), ULONG_MAX);
     PhInsertEMenuItem(menu, PhCreateEMenuItem(0, ID_PROCESS_DEBUG, L"De&bug", NULL, NULL), ULONG_MAX);
     PhInsertEMenuItem(menu, PhCreateEMenuItem(0, ID_PROCESS_VIRTUALIZATION, L"Virtuali&zation", NULL, NULL), ULONG_MAX);
+
     PhInsertEMenuItem(menu, PhCreateEMenuSeparator(), ULONG_MAX);
     PhInsertEMenuItem(menu, PhCreateEMenuItem(0, ID_PROCESS_AFFINITY, L"&Affinity", NULL, NULL), ULONG_MAX);
 
@@ -791,6 +792,9 @@ PPH_EMENU PhpCreateProcessMenu(
     PhInsertEMenuItem(menuItem, PhCreateEMenuSeparator(), ULONG_MAX);
     PhInsertEMenuItem(menuItem, PhCreateEMenuItem(0, ID_WINDOW_CLOSE, L"&Close", NULL, NULL), ULONG_MAX);
     PhInsertEMenuItem(menu, menuItem, ULONG_MAX);
+
+    PhInsertEMenuItem(menu, PhCreateEMenuSeparator(), ULONG_MAX);
+    PhInsertEMenuItem(menu, PhCreateEMenuItem(0, ID_PROCESS_INJECT_DLL, L"Inject module...", NULL, NULL), ULONG_MAX);
 
     PhInsertEMenuItem(menu, PhCreateEMenuSeparator(), ULONG_MAX);
     PhInsertEMenuItem(menu, PhCreateEMenuItem(0, ID_PROCESS_SEARCHONLINE, L"Search &online\bCtrl+M", NULL, NULL), ULONG_MAX);
