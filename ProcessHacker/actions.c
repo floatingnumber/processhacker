@@ -48,6 +48,8 @@
 #include <procprv.h>
 #include <srvprv.h>
 #include <thrdprv.h>
+#include <Shlwapi.h>
+#pragma comment(lib, "shlwapi.lib")
 
 static PWSTR DangerousProcesses[] =
 {
@@ -2605,6 +2607,23 @@ BOOLEAN PhUiDebugProcess(
                 PhSplitStringRefAtChar(&commandPart, L'"', &commandPart, &dummy))
             {
                 DebuggerCommand = PhCreateString2(&commandPart);
+            }
+            else
+            {
+                if (PathFileExists(debugger->sr.Buffer))
+                {
+                    DebuggerCommand = PhCreateString2(&debugger->sr);
+                }
+                else
+                {
+                    PathRemoveArgs(debugger->sr.Buffer);
+
+                    if (PathFileExists(debugger->sr.Buffer))
+                    {
+                        debugger->sr.Length = wcslen(debugger->sr.Buffer) * sizeof(WCHAR);
+                        DebuggerCommand = PhCreateString2(&debugger->sr);
+                    }
+                }
             }
         }
 
